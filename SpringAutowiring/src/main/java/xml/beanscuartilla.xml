@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-autowire="byType">
+
+	<bean id="boligrafo" class="beans.Boligrafo" primary="true"></bean>
+	<bean id="rotulador" class="beans.Boligrafo"></bean>
+	<bean id="pluma" class="beans.Pluma"></bean>
+	<bean id="plumin" class="beans.Pluma" autowire-candidate="false"></bean>
+	<bean id="cuartilla" class="beans.Cuartilla"></bean>
+</beans>
